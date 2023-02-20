@@ -1,0 +1,13 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.copy{
+    color: brown;
+}
+
+nav ul li a {
+    text-decoration:none;
+    list-style: none;
+}
