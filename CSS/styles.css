@@ -165,6 +165,34 @@ button {
 color: #404040cc;
 }
 
-.img{
-    width: 500px;   
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card{
+width: 100%;
+border-radius: 5px 5xp 5px rgb(177, 177, 177);
+}
+.card > img{
+    width: 200px;
+    margin: auto;
+    box-shadow: 5px 5px 5px  #8d8b8b;
+    border-radius: 3px 3px 3px;
+}
+.card > .desc{
+    color: #000;
+    font-size: 15px;
+    padding: 10px;
+    margin: auto;
+}
+.price{
+    font-size: 30px;
+    padding-right: 5px;
+}
+
+footer{
+    position: fixed;
 }
