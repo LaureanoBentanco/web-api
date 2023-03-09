@@ -27,9 +27,26 @@ async function getData(){
     price.textContent = dato.price;
     price.className = price;
 
-    card.append( img, title, price);
+    const buttons = document.createElement('div');
+    buttons.className = 'buttons';
+  
+
+    const verDetalle = document.createElement('button')
+    verDetalle.type = 'button';
+    verDetalle.innerText = "Ver Detalle";
+    verDetalle.className = 'verDetalle';
+    const miCarrito = document.createElement('button');
+    miCarrito.type = 'button';
+    miCarrito.innerText = 'Agregar al Carrito';
+    miCarrito.className = 'miCarrito';
+
+    buttons.appendChild(verDetalle);  
+    buttons.appendChild(miCarrito);  
+    card.append( img, title, price, buttons);
     main.appendChild(card);
+    
 	
+
     });
 }
 getData()

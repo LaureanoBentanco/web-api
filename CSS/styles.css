@@ -167,6 +167,10 @@ color: #404040cc;
 
 main{
     display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
@@ -185,7 +189,8 @@ main{
 }
 
 .card{
-    width: 500px;
+    width: 400px;
+    height: 400px;
     box-shadow: 5px 5px 5px  #8d8b8b;
 }
 
@@ -208,6 +213,27 @@ main{
     text-align: center;
 }
 
-footer{
-   
+.verDetalle{
+    background-color:green;
+    color:#fff;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    padding: 10px;
 }
+
+.miCarrito{
+    background-color:green;
+    color:#fff;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    padding: 10px;
+}
+.buttons{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px;
+
+} 
