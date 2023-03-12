@@ -3,12 +3,20 @@ const main = document.querySelector('main');
 
 
 async function getData(){
-    const res  = await  fetch('https://fakestoreapi.com/products')
+
+    const res  = await  fetch('https://fakestoreapi.com/products');
     const datos = await res.json();
+    mostrardatos(datos);
+
+}
+
+
+function mostrardatos(datos){
+
     datos.forEach(dato=>{
        
         console.log(datos);
-
+  
 	const card = document.createElement('div');
     card.className = 'card';
     
@@ -45,8 +53,8 @@ async function getData(){
     card.append( img, title, price, buttons);
     main.appendChild(card);
     
-	
-
     });
+        
 }
+
 getData()
