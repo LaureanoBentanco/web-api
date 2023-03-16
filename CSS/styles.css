@@ -237,3 +237,26 @@ main{
     padding: 10px;
 
 } 
+
+.list-categ{
+
+    display: NONE;
+    position: absolute;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #f5f5dc;
+
+}
+.list-categ li{
+    padding: 10px;
+    list-style:none;
+
+}
+
+.list-categ li a {
+    text-decoration: none;
+
+}
+.list-categ li :hover{
+    background-color: #8d8b8b;
+}
